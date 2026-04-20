@@ -61,7 +61,7 @@ def create_spider_chart(user_values, job_values):
     return fig
 
 def match_header(rank, match_pct, cv_uploaded):
-    badge = "📄 CV + Interests" if cv_uploaded else "⭐ Interests only"
+    badge = "📄 CV + Interests" if cv_uploaded else "Interests only"
     st.markdown(f"""
         <div style="
             background:linear-gradient(90deg, #0d542b, #2f7d4f);
