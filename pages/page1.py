@@ -44,4 +44,4 @@ for i, step in enumerate(steps):
 	time.sleep(0.7)
 
 time.sleep(0.5)
-st.switch_page("pages/page2.py")
+st.switch_page("page2.py")
