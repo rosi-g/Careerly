@@ -118,7 +118,7 @@ else:
             with st.container(border=True):
                 match_header(i + 1, score, cv_uploaded)
                 st.markdown("<div style='margin-top:12px;'></div>", unsafe_allow_html=True)
-                st.markdown(f"<h3 style='text-align:center; background:#d4edda; padding:6px; border-radius:8px;'>{job}</h3>", unsafe_allow_html=True)
+                st.markdown(f"<h3 style='text-align:center; padding:6px; border-radius:8px;'>{job}</h3>", unsafe_allow_html=True)
                 st.markdown(f"<p style='text-align:center; font-size:0.9rem;'>{JOB_DESCRIPTIONS.get(job, '')}</p>", unsafe_allow_html=True)
                 st.plotly_chart(
                     create_spider_chart(user, JOB_PROFILES.get(job, [3, 3, 3, 2, 2])),
