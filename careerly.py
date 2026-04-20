@@ -258,7 +258,7 @@ with col1:
             "interest_scores": interest_scores,
             "combined_scores": combined_scores,
         }
-        st.switch_page("pages/page1.py")
+        st.switch_page("page1.py")
 
 with col2:
     st.markdown("### What's next?")
