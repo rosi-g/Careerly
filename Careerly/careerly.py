@@ -13,7 +13,7 @@ import PyPDF2
 import nltk
 import sys
 import os
-from job_page import SKILLS_FROM_EXCEL, JOB_DETAILS
+from shared_data import INTEREST_SPREAD, JOB_DETAILS
 from translations import t, language_toggle, get_interests_display, map_interests_to_en
 
 nltk.download('stopwords', quiet=True)
