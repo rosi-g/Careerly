@@ -110,7 +110,9 @@ def load_skills_from_excel(path="skills_database.xlsx"):
     Handles both old and new ESCO column naming conventions.
     """
     try:
-        df = pd.read_excel(path)
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        full_path = os.path.join(base_dir, path)
+        df = pd.read_excel(full_path)
         df["Job"] = df["Job"].ffill()
         skill_col = "Skill Name (ESCO)" if "Skill Name (ESCO)" in df.columns else "Skill Name"
         kw_col = "Keywords" if "Keywords" in df.columns else "Keywords (comma separated)"
