@@ -1,0 +1,10 @@
+streamlit
+pandas
+plotly
+PyPDF2
+nltk
+requests
+scikit-learn
+python-dotenv
+openpyxl
+supabase
